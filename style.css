@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #494747;
+    background-color: #fdfafa;
+    
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+span{
+    color: rgb(22, 71, 145);
+}
+
+header {
+    width: 100%;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #333;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Garante que o header fique acima de outros elementos */
+}
+
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.logo {
+    font-size: 2.5rem;
+    color: #030303;
+    margin-left: 100px;
+    font-family: "VT323", monospace;
+    font-weight: 900;
+    font-style: normal;
+}
+
+nav{
+    flex-direction: column;
+    line-height: 10px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+       
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: rgb(5, 5, 5);
+}
+
+a:hover{
+    color: rgb(29, 161, 46);
+    transition: 0.3s all;
+}
+
+#inicio{
+    border: 2px solid rgb(229, 255, 0);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inicio:hover{
+    background-color: rgb(229, 225, 0);
+    color: white;
+}
+
+#projetos{
+    border: 2px solid rgb(201, 14, 14);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+#projetos:hover{
+    background-color: rgb(201, 14, 14);
+    color: rgb(255, 255, 255);
+}
+
+#linkedin{
+    border: 2px solid rgb(14, 157, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#linkedin:hover{
+    background-color: rgb(14, 157, 201);
+    color: white;
+}
+#whats{
+    border: 2px solid rgb(14, 201, 39);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#whats:hover{
+    background-color: rgb(14, 201, 39);
+    color: white;
+}
+
+#github{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#github:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+.intro, .about, .projects, .education {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro aside, .about aside, .education aside {
+    max-width: 400px;
+}
+
+h2{
+    color: #000000;
+    font-size: 59px;
+    line-height: 80px;
+    font-family: poppinsmedium;
+}
+
+img{
+    width: 590px;
+    border-radius: 20px;
+    margin-left: 200px;
+}
+
+.tech-images img, .profile-photo img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.projects h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1 rem;
+    font-size: 1.8rem;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1 rem;
+}
+
+.project-gallery img {
+    margin-left: 15px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.education aside {
+    max-width: 800px;
+    text-align: center;
+}
+
+.soft-skills-section {
+    width: 100%;
+    max-width: 2000px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .soft-skills-section h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .skills-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .skill-item {
+    background-color: #e0e4e8;
+    padding: 0.75rem 1.25rem;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #000000;
+    transition: background-color 0.3s;
+  }
+
+  .skill-item:hover {
+    background-color: #c1d3e0;
+  }
+
+  .end {
+    padding: 15px 3%;
+}
+
+.end {
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 20px 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--bg-color);
+}
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0.5rem 0;
+    }
+
+    .tech-images, .project-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+}
